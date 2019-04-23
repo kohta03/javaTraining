@@ -1,0 +1,2 @@
+main.txtをもとにCSVファイルの読み込みと書き込みを行うreadメソッドとwriteメソッドを実装せよ。
+実装にはこのフォルダ内のPerson.javaとperson.csvを用いる。person.csvはsrcフォルダ内に配置して使う。

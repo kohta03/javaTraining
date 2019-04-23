@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+encoding/<project>=SJIS
+encoding/client.csv=Shift-JIS
+encoding/person.csv=Shift-JIS
+encoding/work.csv=Shift-JIS

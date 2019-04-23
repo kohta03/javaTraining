@@ -1,0 +1,26 @@
+
+
+	public static void main(String[] args) {
+		final String fileName = "src/person.csv";
+		final String newFileName = "src/newPerson.csv";
+
+		List<Person> list = new ArrayList<>();
+		list = read(fileName);
+		list.stream().forEach(System.out::println);
+		
+		write(newFileName,list);
+		
+		List<Person> newList = new ArrayList<>();
+		newList = read(newFileName);
+		newList.stream().forEach(System.out::println);
+
+	}
+	
+	public static List<Person> read(String fileName) {
+      //引数に指定したCSVからデータを読み込んでPerson型のリストに格納する
+	}
+	
+	public static void write(String fileName,List<Person> list) {
+      // 引数に指定したリストをカンマ区切りの文字列に変換して一行ずつ指定したCSVに書き込む
+      //名字,名前,年齢の入力を受け付けて指定したSCVに書き込む
+	}

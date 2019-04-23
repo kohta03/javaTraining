@@ -1,0 +1,42 @@
+1
+	ここに以下のプログラムがある
+	public class Main{
+		public static void main(String[] args){
+			Employee engineer = new Engineer();
+			Employee sales = new Sales();
+			Employee designer = new Designer();
+
+			Employee[] employees = {
+					engineer,
+					sales,
+					designer
+			};
+
+			for(Employee e : employees) {
+				e.introduction();
+			}
+	  }
+	}
+	このプログラムの実行結果が
+	私はエンジニアです
+	私は営業です
+	私はデザイナーです
+	となるようにEmployeeクラス及びEmployeeクラスを継承したEngineerクラス、Salesクラス、Designerクラスを作成せよ
+
+
+2
+	1のmainメソッドを書き換えた。1と同じ結果になるようにEmployeeIntroducerクラスを作成せよ。
+	public class Main{
+		public static void main(String[] args){
+			Employee engineer = new Engineer();
+			Employee sales = new Sales();
+			Employee designer = new Designer();
+			
+			EmoloyeeIntroducer introducer = new EmployeeIntroducer();
+
+			introducer.introduce(engineer);
+			introducer.introduce(sales);
+			introducer.introduce(designer);
+
+		}
+	}
